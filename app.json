@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Baki Training Tracker",
+    "slug": "Baki",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "description": "Training volume tracker for evolution mesurament"
+  }
+}

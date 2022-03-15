@@ -1,0 +1,85 @@
+{
+  "trainings": [
+    {
+      "id": 0,
+      "day": "23/02/2022",
+      "exerciseList": [
+        {
+          "id": "1",
+          "exerciseName": "Supino reto c/ halteres",
+          "reps": 10,
+          "series": 3,
+          "weight": 45
+        },
+        {
+          "id": "2",
+          "exerciseName": "Peck deck",
+          "reps": 10,
+          "series": 4,
+          "weight": 50
+        },
+        {
+          "id": "3",
+          "exerciseName": "Supino reto chão",
+          "reps": 10,
+          "series": 5,
+          "weight": 16
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "day": "25/02/2022",
+      "exerciseList": [
+        {
+          "id": "1",
+          "exerciseName": "Supino reto c/ halteres",
+          "reps": 10,
+          "series": 3,
+          "weight": 50
+        },
+        {
+          "id": "2",
+          "exerciseName": "Peck deck",
+          "reps": 10,
+          "series": 4,
+          "weight": 50
+        },
+        {
+          "id": "3",
+          "exerciseName": "Supino reto chão",
+          "reps": 10,
+          "series": 5,
+          "weight": 16
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "day": "27/02/2022",
+      "exerciseList": [
+        {
+          "id": "1",
+          "exerciseName": "Supino reto c/ halteres",
+          "reps": 10,
+          "series": 3,
+          "weight": 50
+        },
+        {
+          "id": "2",
+          "exerciseName": "Peck deck",
+          "reps": 10,
+          "series": 4,
+          "weight": 55
+        },
+        {
+          "id": "3",
+          "exerciseName": "Supino reto chão",
+          "reps": 10,
+          "series": 4,
+          "weight": 18
+        }
+      ]
+    }
+  ]
+}
