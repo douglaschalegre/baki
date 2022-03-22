@@ -7,12 +7,12 @@ import { Button } from '../../components/Button';
 import { SignInContent } from '../../components/SignInContent';
 
 import { styles } from './styles';
-// import {
-//   CLIENT_ID,
-//   REDIRECT_URI,
-//   RESPONSE_TYPE,
-//   SCOPE,
-// } from '../../../sensitivedata';
+import {
+  CLIENT_ID,
+  REDIRECT_URI,
+  RESPONSE_TYPE,
+  SCOPE,
+} from '../../../sensitivedata';
 
 type AuthResponse = {
   type: string;
@@ -27,13 +27,15 @@ export function SignIn() {
   async function handleSignIn() {
     const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPE}`;
     try {
-      const response = await AuthSession.startAsync({ authUrl });
-      console.log(response);
+      const { type, params } = (await AuthSession.startAsync({
+        authUrl,
+      })) as AuthResponse;
+      if (type === 'sucess') {
+        navigation.navigate('Trainings', { token: params.access_token });
+      }
     } catch (e) {
-      // console.log(e);
+      console.log(e);
     }
-
-    navigation.navigate('Trainings');
   }
 
   return (
